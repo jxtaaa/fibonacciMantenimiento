@@ -1,5 +1,7 @@
 package org.jlbp.fibonacci;
 
+import java.math.BigInteger;
+
 /**
  * Class providing a method that computes
  * the nth value of the Fibonacci sequence.
@@ -8,15 +10,23 @@ package org.jlbp.fibonacci;
  */
 
 public class Fibonacci {
-    public int compute(int n) {
-        if (n > 1) {
-            return compute(n - 1) + compute(n - 2);
-        } else if (n == 1) {
-            return 1;
-        } else if (n == 0) {
-            return 0;
-        } else {
-            throw new RuntimeException("Valor no válido: " + n);
+    public BigInteger compute(int n) {
+        if(n < 0){
+            throw new RuntimeException("ERROR: Input cannot be negative.");
         }
+
+        if (n == 1 || n == 2) {
+            return BigInteger.ONE;
+        }
+
+        BigInteger fibo1 = BigInteger.ONE;
+        BigInteger fibo2 = BigInteger.ONE;
+        BigInteger fibonacci = BigInteger.ZERO;
+        for (int i = 3; i <= n; i++) {
+            fibonacci = fibo1.add(fibo2);
+            fibo1 = fibo2;
+            fibo2 = fibonacci;
+        }
+        return fibonacci;
     }
 }
