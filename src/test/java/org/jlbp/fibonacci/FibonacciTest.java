@@ -8,11 +8,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Fibonacci sequence:
- * Fib(0) = 0
- * Fib(1) = 1
- * Fib(2) = Fib(0) + Fib(1) = 0 + 1 = 1
- * Fib(3) = Fib(1) + Fib(2) = 1 + 1 = 2
- * Fib(4) = Fib(2) + Fib(3) = 1 + 2 = 3
+ * Fib(0) = 0 <br>
+ * Fib(1) = 1 <br>
+ * Fib(2) = Fib(0) + Fib(1) = 0 + 1 = 1 <br>
+ * Fib(3) = Fib(1) + Fib(2) = 1 + 1 = 2 <br>
+ * Fib(4) = Fib(2) + Fib(3) = 1 + 2 = 3 <br>
  *
  */
 
