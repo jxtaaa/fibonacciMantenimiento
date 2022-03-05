@@ -10,7 +10,7 @@ import java.math.BigInteger;
  */
 
 public class Fibonacci {
-    public BigInteger compute(int n) {
+    public BigInteger compute(long n) {
         if(n < 0){
             throw new RuntimeException("ERROR: Input cannot be negative.");
         }
