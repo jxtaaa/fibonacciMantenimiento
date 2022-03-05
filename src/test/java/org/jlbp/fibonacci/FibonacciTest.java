@@ -72,7 +72,7 @@ class FibonacciTest {
     }
 
     @Test
-    public void computeShouldReturn(){
-        System.out.println(fibonacci.compute(50));
+    public void computeShouldReturnAPositiveAndValidValueForABigInput(){
+        System.out.println(fibonacci.compute(200));
     }
 }
